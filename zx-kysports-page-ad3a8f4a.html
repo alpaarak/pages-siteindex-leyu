@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开云体育在线 · 简明访问指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f7f2;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            color: #2c2c2c;
+            padding: 2rem 1rem;
+        }
+
+        .page {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fffffffa;
+            border-radius: 28px;
+            padding: 2.5rem 2rem 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 4px rgba(0, 0, 0, 0.02);
+        }
+
+        /* hero区 */
+        .hero {
+            margin-bottom: 2.8rem;
+            border-bottom: 1px solid #ebe9e2;
+            padding-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #1f1f1f;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .hero .sub {
+            color: #6b6b6b;
+            font-size: 1rem;
+            border-left: 4px solid #c8b99e;
+            padding-left: 1rem;
+            margin: 0.6rem 0 0;
+            background: #f5f2ea;
+            padding: 0.7rem 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* 信息密度 段落排版 */
+        .section {
+            margin-bottom: 2.4rem;
+        }
+
+        .section h2 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 0.9rem;
+            color: #252525;
+            border-bottom: 1px dashed #ddd8cf;
+            padding-bottom: 0.3rem;
+            display: inline-block;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+        }
+
+        .section p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-box {
+            background: #f6f3ec;
+            border-left: 4px solid #b3a58c;
+            padding: 1.2rem 1.4rem;
+            border-radius: 6px;
+            margin: 1.2rem 0;
+            font-size: 0.95rem;
+        }
+
+        .highlight-box strong {
+            color: #3f3a30;
+        }
+
+        .inline-code {
+            background: #ece8df;
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'SFMono-Regular', Consolas, monospace;
+            font-size: 0.9em;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.2rem 0 0.8rem;
+        }
+
+        .feature-item {
+            background: #fcfaf5;
+            border: 1px solid #e6e0d5;
+            padding: 1rem 1.2rem;
+            border-radius: 12px;
+        }
+
+        .feature-item h3 {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: #363636;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #5a5a5a;
+            margin-bottom: 0;
+        }
+
+        .faq-tile {
+            background: #fcfaf5;
+            border-radius: 12px;
+            padding: 1.2rem 1.4rem;
+            margin-top: 1.2rem;
+            border: 1px solid #ece6dc;
+        }
+
+        .faq-tile details {
+            margin-bottom: 0.6rem;
+            border-bottom: 1px solid #ece6dc;
+            padding-bottom: 0.6rem;
+        }
+
+        .faq-tile details:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .faq-tile summary {
+            font-weight: 500;
+            cursor: pointer;
+            color: #2f2b24;
+            padding: 0.2rem 0;
+        }
+
+        .faq-tile details p {
+            margin-top: 0.4rem;
+            padding-left: 0.2rem;
+            color: #555;
+            font-size: 0.93rem;
+        }
+
+        .foot-links {
+            margin-top: 2rem;
+            padding-top: 1.2rem;
+            border-top: 1px solid #e0dbd0;
+            font-size: 0.9rem;
+            color: #6b665c;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.6rem;
+            align-items: center;
+        }
+
+        .foot-links a {
+            color: #4c463a;
+            text-decoration: none;
+            border-bottom: 1px dotted #9f978a;
+        }
+
+        .foot-links a:hover {
+            border-bottom: 1px solid #4c463a;
+        }
+
+        .foot-links .nowrap {
+            white-space: nowrap;
+        }
+
+        /* 响应式 */
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+
+            .page {
+                padding: 1.8rem 1.2rem 1.5rem;
+                border-radius: 20px;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+                gap: 0.8rem;
+            }
+
+            .foot-links {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- hero -->
+    <div class="hero">
+        <h1>开云体育在线 · 从访问到理解</h1>
+        <div class="sub">一份简洁的指南，聚焦于如何顺利获取信息与使用服务，同时留意访问环境与页面呈现细节。</div>
+    </div>
+
+    <!-- 说明区：简明指南 -->
+    <div class="section">
+        <h2>访问之前的准备</h2>
+        <p>打开 <a href="https://zx-kysports.com">开云体育在线</a> 时，建议使用最新版的主流浏览器，并保持网络连接稳定。部分页面内容可能依赖 JavaScript 渲染，若未正常加载可尝试刷新或更换网络环境。移动端与桌面端的布局经过适配，但横屏或平板设备可获得更完整的排版。</p>
+        <div class="highlight-box">
+            <strong>提醒：</strong> 若遇到页面加载缓慢或部分素材未显示，请检查本地网络设置，部分区域可能需要调整 DNS 或关闭代理干扰。不要轻信任何非官方渠道的“加速”或“镜像”链接。
+        </div>
+    </div>
+
+    <!-- 优势区 / 特点 -->
+    <div class="section">
+        <h2>界面与内容特点</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>信息层级清晰</h3>
+                <p>导航结构采用扁平分类，重点模块在首页直接露出，减少点击深度。</p>
+            </div>
+            <div class="feature-item">
+                <h3>多终端适配</h3>
+                <p>从手机到桌面均保持可读性，字体与间距根据屏幕自动调整。</p>
+            </div>
+            <div class="feature-item">
+                <h3>低干扰设计</h3>
+                <p>页面没有非必要的弹窗或自动播放内容，用户可以自主选择浏览节奏。</p>
+            </div>
+            <div class="feature-item">
+                <h3>常规更新节奏</h3>
+                <p>内容维护有固定周期，资讯与数据会定期刷新，保持基本时效性。</p>
+            </div>
+        </div>
+        <p style="margin-top:1rem;">上述特性使得日常使用体验更接近一个结构化的信息面板，而非单一功能的入口。访问时请注意区分页面内的正式内容与外部引用。</p>
+    </div>
+
+    <!-- 场景 + 提示 -->
+    <div class="section">
+        <h2>常见使用场景</h2>
+        <p>浏览 <a href="https://zx-kysports.com">开云体育在线</a> 的场景通常包括：快速查阅体育相关动态、了解平台功能分区，以及偶尔验证账户或活动信息。建议在首次访问时花几分钟熟悉顶部分类与底部说明区域，这能帮助你在之后更快定位所需内容。</p>
+        <div class="highlight-box">
+            <strong>访问提醒：</strong> 请通过地址栏手动输入或使用收藏夹中的正确链接。部分搜索结果可能包含非官方标注，务必核对域名是否为 <span class="inline-code">zx-kysports.com</span>。避免在第三方页面输入任何个人凭证。
+        </div>
+    </div>
+
+    <!-- FAQ 摘要 -->
+    <div class="section">
+        <h2>常见问题摘要</h2>
+        <div class="faq-tile">
+            <details>
+                <summary>页面部分区域显示异常怎么办？</summary>
+                <p>首先检查浏览器是否拦截了必要的脚本或样式。尝试关闭广告屏蔽插件或切换无痕模式。如果问题持续，考虑更新浏览器或更换设备测试。</p>
+            </details>
+            <details>
+                <summary>是否需要注册才能浏览主要内容？</summary>
+                <p>大部分资讯和介绍性页面无需登录即可查看。部分个性化功能或历史记录需要注册账户才能使用，注册流程在站内有明确指引。</p>
+            </details>
+            <details>
+                <summary>移动端与桌面端内容一致吗？</summary>
+                <p>核心信息保持一致，但布局会根据屏幕宽度重新排列。某些表格或复杂组件在手机端会以堆叠或滚动形式呈现，不影响核心数据理解。</p>
+            </details>
+            <details>
+                <summary>如何确认我访问的是官方站点？</summary>
+                <p>检查浏览器地址栏是否为 <span class="inline-code">https://zx-kysports.com</span>，并确认有安全锁标识。不通过短信、邮件中的外链直接访问，避免钓鱼站点。</p>
+            </details>
+        </div>
+    </div>
+
+    <!-- 底部链接 -->
+    <div class="foot-links">
+        <span>主要资源：<a href="https://zx-kysports.com">开云体育在线</a></span>
+        <span class="nowrap">建议反馈 · 帮助中心</span>
+        <span>环境提示：保持浏览器与系统更新</span>
+    </div>
+</div>
+</body>
+</html>
