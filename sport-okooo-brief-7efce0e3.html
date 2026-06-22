@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>okooo · 体育数据与赛事记录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fbfbfa;
+            font-family: -apple-system, BlinkMacSystemFont, "Noto Sans SC", "Segoe UI", Helvetica, Arial, sans-serif;
+            color: #1e1e1e;
+            line-height: 1.7;
+        }
+
+        .page {
+            max-width: 44rem;
+            margin: 0 auto;
+            padding: 2.4rem 1.6rem 4rem 1.6rem;
+        }
+
+        /* hero 区域 */
+        .hero {
+            margin-bottom: 3.2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #e4e4e4;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #0a0a0a;
+            margin-bottom: 0.25rem;
+        }
+
+        .hero .tagline {
+            font-size: 1rem;
+            color: #6b6b6b;
+            font-weight: 400;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero p {
+            font-size: 0.95rem;
+            color: #3d3d3d;
+            max-width: 36rem;
+        }
+
+        /* 背景说明卡片 */
+        .context-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1.6rem 2rem;
+            margin-bottom: 2.8rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02), 0 1px 2px rgba(0,0,0,0.04);
+            border: 1px solid #ececec;
+        }
+
+        .context-card h2 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #1e1e1e;
+            margin-bottom: 0.8rem;
+            border-left: 3px solid #3b7b6e;
+            padding-left: 0.9rem;
+        }
+
+        .context-card p {
+            font-size: 0.95rem;
+            color: #3a3a3a;
+            margin-bottom: 0.8rem;
+        }
+
+        .context-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* 三段自然介绍 */
+        .intro-grid {
+            margin-bottom: 3rem;
+        }
+
+        .intro-item {
+            margin-bottom: 2.2rem;
+            padding-bottom: 1.6rem;
+            border-bottom: 1px dotted #ddd;
+        }
+
+        .intro-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .intro-item h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #242424;
+            margin-bottom: 0.5rem;
+        }
+
+        .intro-item p {
+            font-size: 0.95rem;
+            color: #3a3a3a;
+        }
+
+        /* 页尾提示 */
+        .footer-note {
+            margin-top: 2.8rem;
+            padding-top: 1.6rem;
+            border-top: 1px solid #e4e4e4;
+            text-align: left;
+        }
+
+        .footer-note p {
+            font-size: 0.92rem;
+            color: #555;
+            margin-bottom: 0.4rem;
+        }
+
+        .footer-note a {
+            color: #2d5e54;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s;
+        }
+
+        .footer-note a:hover {
+            border-bottom-color: #2d5e54;
+        }
+
+        .footer-note .highlight-link {
+            font-weight: 500;
+            color: #1e4d43;
+        }
+
+        /* 响应式细节 */
+        @media (max-width: 480px) {
+            .page {
+                padding: 1.6rem 1.2rem 3rem 1.2rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .context-card {
+                padding: 1.2rem 1.2rem;
+            }
+            .intro-item h3 {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+
+    <!-- hero 首页横幅 -->
+    <div class="hero">
+        <h1>okooo</h1>
+        <div class="tagline">比赛数据 · 联赛记录 · 观赛参考</div>
+        <p>一个持续更新的体育信息站点，覆盖多类赛事的数据整合与历史查询。对于经常关注赛程和比分的用户来说，它是一个可以反复回来查阅的档案型工具。</p>
+    </div>
+
+    <!-- 背景说明 -->
+    <div class="context-card">
+        <h2>再次访问的缘由</h2>
+        <p>体育赛事的信息流时刻变化，单次浏览往往不足以形成完整的认知链条。无论是追踪某支球队的近期状态，还是回顾特定联赛的积分走势，重复访问同一数据源能够帮助建立更连续的理解。这也是许多人把 <a href="https://sport-okooo.com" style="color:#2d5e54;text-decoration:none;font-weight:500;">okooo</a> 加入书签的原因——它的信息结构相对稳定，且长期维护，减少了每次重新寻找入口的精力。</p>
+        <p>从使用习惯来看，收藏一个站点往往意味着它至少满足了两点：信息可靠、更新及时。okooo 在这两个维度上保持着一种平实的可信度，没有过度包装，而是让数据本身成为主角。</p>
+    </div>
+
+    <!-- 三段自然介绍（承接上文：收藏与持续关注） -->
+    <div class="intro-grid">
+        <div class="intro-item">
+            <h3>收藏之后，如何持续使用</h3>
+            <p>收藏夹里的链接容易积灰，但体育数据类站点是个例外。赛季进行中，联赛排名、射手榜、赛程日历几乎每周都在变化。养成定期访问的习惯后，会发现页面布局虽然简洁，但信息层级分明，很快就能定位到想看的条目。对于同时关注多个联赛的用户来说，这种低认知负荷的设计反而提升了效率。</p>
+        </div>
+        <div class="intro-item">
+            <h3>数据积累带来的对比价值</h3>
+            <p>单场比赛的比分只是孤立事件，但连续几轮的数据汇集后，就能发现球队状态的波动趋势。okooo 的页面保留了历史场次的记录，用户可以在赛季中后期回头查阅早前的结果，进行纵向对比。这种能力在多数快餐式体育应用中并不常见，却是深度观赛者所需要的。</p>
+        </div>
+        <div class="intro-item">
+            <h3>持续关注，形成个人信息锚点</h3>
+            <p>信息源越分散，判断越容易失真。选择一个稳定的数据站点作为锚点，围绕它建立自己的关注列表，是许多理性爱好者的做法。okooo 的界面不强调即时推送，而是把选择权交给用户——你决定什么时候看、看什么。这种克制的交互方式，反而让长期关注变得更可持续。</p>
+        </div>
+    </div>
+
+    <!-- 页尾访问提示 -->
+    <div class="footer-note">
+        <p>如果你已经有一段时间没有打开书签里的那个链接，现在不妨重新访问一次。数据已经更新，赛季也在推进。</p>
+        <p>站点地址：<a href="https://sport-okooo.com" class="highlight-link">okooo</a> · 适合在桌面端和移动端浏览器中直接使用。</p>
+        <p style="margin-top:0.6rem;font-size:0.85rem;color:#888;">无需注册，没有推送弹窗，只有持续维护的比赛记录。</p>
+    </div>
+
+</div>
+</body>
+</html>
